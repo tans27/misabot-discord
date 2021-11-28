@@ -1,6 +1,4 @@
 import {
-  BOT_LOGO,
-  BOT_NAME,
   MESSAGE_EMBED_COLOR,
   PLATFORM,
 } from '@/constants/config';
@@ -47,5 +45,4 @@ export const createPlayMessage = (payload: {
     )
     .setThumbnail(payload.thumbnail)
     .addFields(author, length, type)
-    .setFooter(BOT_NAME, BOT_LOGO);
 };
